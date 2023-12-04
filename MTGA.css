@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    background: linear-gradient(45deg, #9a0000, #480c0c, #000000, #420000);
+    margin: 0;
+    padding: 0;    
+    background-size: 650% 100%; /* или '100% 100%' в зависимости от ваших предпочтений */
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    position: fixed;
+    font: 900 48px "Roboto", sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba (0, 0, 0, .2);
+}
+
+h2 {
+    position: absolute;
+    top: 15px;
+    font: 900 24px "Roboto", sans-serif;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba (0, 0, 0, .2);
+    z-index: 3;
+}
+
+.first {
+    position: absolute;
+    bottom: 20px;
+    font: 900 24px "Roboto", sans-serif;
+    color: goldenrod;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba (0, 0, 0, .2);
+    z-index: 3;
+}
+
+.second {
+    position: absolute;
+    bottom: 20px;
+    font: 900 24px "Roboto", sans-serif;
+    color: silver;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba (0, 0, 0, .2);
+    z-index: 3;
+}
+
+.third {
+    position: absolute;
+    bottom: 20px;
+    font: 900 24px "Roboto", sans-serif;
+    color: brown;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba (0, 0, 0, .2);
+    z-index: 3;
+}
+
+.forth {
+    position: absolute;
+    bottom: 20px;
+    font: 900 24px "Roboto", sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba (0, 0, 0, .2);
+    z-index: 3;
+}
+
+.fifth {
+    position: absolute;
+    bottom: 20px;
+    font: 900 24px "Roboto", sans-serif;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba (0, 0, 0, .2);
+    z-index: 3;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* или cover, в зависимости от ваших предпочтений */
+    transition: transform .8s;
+}
+
+.area {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100vh;
+    width: fit-content;
+}
+
+.bbox {    
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    position: relative;
+    height: 450px;
+    width: 300px;    
+    margin: 0 15px;
+    overflow: hidden;
+    transition: transform .8s;
+}
+
+.image:hover {
+    transform: scale(1.2);
+    
+}
+
+.bbox:hover {
+    transform: scale(1.2);
+    
+}
+
+.horizontal-scroll-wrapper {
+    width: 100px;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+
+
